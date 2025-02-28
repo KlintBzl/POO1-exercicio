@@ -1,14 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade8;
 
-/**
- *
- * @author aluno.saolucas
- */
 public class Porta {
+    private boolean aberta;
     
+    public Porta(boolean aberta){
+        this.aberta = aberta;
+    }
+    
+    public boolean abrir(){
+        if(aberta == true){
+            this.aberta = true;
+            System.out.println("A porta ja está aberta!!");
+        }else if(aberta == false){
+            this.aberta = true;
+            System.out.println("A porta abriu!");
+        }
+            return this.aberta;
+    }
+    
+    public boolean fechar(){
+        if(aberta == false){
+            this.aberta = false;
+            System.out.println("A porta ja está fechada!!");
+        }else if(aberta == true){
+            this.aberta = false;
+            System.out.println("A porta fechou!");
+        }
+        return this.aberta;
+    }
 }
